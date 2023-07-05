@@ -17,10 +17,11 @@ body {
 header {
   height: 100px;
   color: white;
+  background-color: black;
 }
 
-main {
-  height: calc(100vh - 200px);
+#content {
+  height: calc(100vh - 100px);
 }
 
 footer {
@@ -78,6 +79,15 @@ footer {
 
 .left-footer * {
   margin-right: 10px;
+}
+
+.song-icon {
+  color: grey;
+}
+
+#footer small {
+  font-size: 12px;
+  color: gray;
 }
 
 .center-footer {
