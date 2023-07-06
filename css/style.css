@@ -7,9 +7,9 @@
 
 /* LAYOUT */
 
-/* .bordered {
+.bordered {
   border: 2px solid white;
-} */
+}
 
 body {
   background-color: black;
@@ -56,6 +56,33 @@ footer {
   justify-content: space-between;
   font-size: 0.8rem;
 }
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.row {
+  margin: 0 -1rem;
+}
+
+.col {
+  padding: 1rem;
+}
+
+h2 {
+  padding-top: 35px;
+}
+
+/* DETAILS */
+
+.title {
+  color: white;
+}
+
+/* NAVBAR */
 
 #navbar .logo {
   width: 150px;
@@ -143,7 +170,7 @@ footer {
 
 /* ALBUM SECTION */
 
-#album-list .list {
+#album-menu .list {
   display: flex;
   list-style-type: none;
   justify-content: center;
@@ -151,12 +178,70 @@ footer {
   font-size: 0.9rem;
 }
 
-/* DETAILS */
-
-.title {
-  color: white;
+#recently-played .row {
+  display: flex;
 }
 
+#recently-played .col {
+  width: calc(100% / 6);
+}
+
+#recently-played .album-img {
+  width: 100%;
+}
+
+.album-img img {
+  width: 100%;
+}
+
+.album-title {
+  color: white;
+  margin: 8px 0;
+}
+
+.album-author {
+  font-size: 0.7rem;
+}
+
+.col * {
+  text-align: center;
+}
+
+#custom-playlist .row {
+  display: flex;
+}
+
+#custom-playlist .col {
+  width: calc(100% / 6);
+}
+
+#custom-playlist .album-img {
+  width: 100%;
+}
+
+#popular-artist .row {
+  display: flex;
+}
+
+#popular-artist .col {
+  width: calc(100% / 6);
+}
+
+#popular-artist .album-img {
+  width: 100%;
+}
+
+.circle {
+  display: inline-block;
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#popular-artist img {
+  width: 100%;
+}
 /* FOOTER */
 
 #footer .player {
